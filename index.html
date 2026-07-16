@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마켓 보드 — 나만의 시장 현황판</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0e17;
+    --panel: #10151f;
+    --panel-border: #1e2733;
+    --ink: #e7ecf3;
+    --ink-dim: #7c8a9c;
+    --ink-faint: #4a5568;
+    --gold: #c9a227;
+    --gold-dim: #8a7220;
+    --up: #ef4444;
+    --down: #3b82f6;
+    --flat: #7c8a9c;
+    --divider: #182130;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 600px at 15% -10%, #0d1420 0%, transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .num{ font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+
+  /* ---------- Ticker tape (signature element) ---------- */
+  .tape-wrap{
+    position: sticky; top:0; z-index: 20;
+    background: #05070c;
+    border-bottom: 1px solid var(--panel-border);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+  .tape-track{
+    display: inline-flex;
+    animation: scroll-left 42s linear infinite;
+    will-change: transform;
+  }
+  .tape-track:hover{ animation-play-state: paused; }
+  @keyframes scroll-left{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+  }
+  .tape-item{
+    display:inline-flex; align-items:center; gap:8px;
+    padding: 0 22px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    border-right: 1px solid var(--panel-border);
+  }
+  .tape-item .name{ color: var(--ink-dim); }
+  .tape-item .price{ color: var(--ink); font-weight:600; }
+  .tape-item.up .chg{ color: var(--up); }
+  .tape-item.down .chg{ color: var(--down); }
+  .tape-item.flat .chg{ color: var(--flat); }
+
+  /* ---------- Header ---------- */
+  header{
+    max-width: 1180px; margin: 0 auto;
+    padding: 40px 24px 20px;
+    display:flex; align-items:flex-end; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    margin: 0 0 4px;
+    letter-spacing: -0.02em;
+  }
+  h1 span{ color: var(--gold); }
+  header .sub{ color: var(--ink-dim); font-size: 14px; }
+  .refresh-zone{ display:flex; align-items:center; gap: 12px; }
+  #last-updated{ font-size: 12px; color: var(--ink-faint); font-family:'JetBrains Mono', monospace; }
+  #refresh-btn{
+    background: transparent;
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    padding: 9px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    display:flex; align-items:center; gap:8px;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  #refresh-btn:hover{ background: rgba(201,162,39,0.08); border-color: var(--gold); }
+  #refresh-btn:active{ transform: translateY(1px); }
+  #refresh-btn .spin{ display:inline-block; transition: transform .5s ease; }
+  #refresh-btn.loading .spin{ animation: spin 0.8s linear infinite; }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  main{ max-width: 1180px; margin: 0 auto; padding: 8px 24px 80px; }
+
+  .section{ margin-top: 36px; }
+  .section-head{
+    display:flex; align-items:baseline; gap: 10px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .section-head .eyebrow{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+  }
+  .section-head h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px; margin:0; font-weight:600; color: var(--ink);
+  }
+  .section-head .count{ margin-left:auto; font-size:12px; color: var(--ink-faint); font-family:'JetBrains Mono', monospace; }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .card{
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    padding: 16px 18px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .card:hover{ border-color: #2a3648; transform: translateY(-1px); }
+  .card::before{
+    content:"";
+    position:absolute; left:0; top:0; bottom:0; width: 3px;
+    background: var(--flat);
+  }
+  .card.up::before{ background: var(--up); }
+  .card.down::before{ background: var(--down); }
+
+  .card .label{
+    font-size: 13px; color: var(--ink-dim); margin-bottom: 8px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .card .label .code{ font-size:10px; color: var(--ink-faint); font-family:'JetBrains Mono',monospace; }
+  .card .price{
+    font-size: 24px; font-weight: 600; line-height: 1.2;
+    display:flex; align-items:baseline; gap: 6px;
+  }
+  .card .price .unit{ font-size: 12px; color: var(--ink-faint); font-weight:400; }
+  .card .delta{
+    margin-top: 6px; font-size: 13px;
+    display:flex; align-items:center; gap: 6px;
+  }
+  .card.up .delta{ color: var(--up); }
+  .card.down .delta{ color: var(--down); }
+  .card.flat .delta{ color: var(--flat); }
+  .card .arrow{ font-size: 11px; }
+
+  .card.error{ opacity: 0.7; }
+  .card.error .price{ font-size: 14px; color: var(--ink-faint); font-weight:400; }
+  .card.error::before{ background: var(--ink-faint); }
+
+  .card.skeleton .price, .card.skeleton .delta{
+    background: linear-gradient(90deg, #161e2b 25%, #1c2534 50%, #161e2b 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s ease infinite;
+    border-radius: 4px; color: transparent;
+  }
+  @keyframes shimmer{ 0%{background-position: 200% 0;} 100%{background-position: -200% 0;} }
+
+  footer{
+    max-width: 1180px; margin: 0 auto; padding: 0 24px 50px;
+    color: var(--ink-faint); font-size: 12px; line-height: 1.7;
+  }
+  footer a{ color: var(--gold-dim); }
+
+  @media (max-width: 560px){
+    .grid{ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    header{ padding: 28px 18px 16px; }
+    main{ padding: 8px 18px 60px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .tape-track{ animation: none; }
+    #refresh-btn.loading .spin{ animation: none; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="tape-wrap">
+    <div class="tape-track" id="tape-track">
+      <!-- filled by JS, duplicated once for seamless loop -->
+    </div>
+  </div>
+
+  <header>
+    <div>
+      <h1>마켓<span>보드</span></h1>
+      <div class="sub">한국 · 미국 시장 종가 한눈에 — 개인 시작 페이지</div>
+    </div>
+    <div class="refresh-zone">
+      <span id="last-updated">불러오는 중…</span>
+      <button id="refresh-btn" onclick="loadAll()">
+        <span class="spin">⟳</span> 새로고침
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">Indices</span>
+        <h2>지수</h2>
+        <span class="count">5</span>
+      </div>
+      <div class="grid" id="grid-indices"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">US · Magnificent 7</span>
+        <h2>미국 M7</h2>
+        <span class="count">7</span>
+      </div>
+      <div class="grid" id="grid-us"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">KOSPI</span>
+        <h2>국내 종목</h2>
+        <span class="count">2</span>
+      </div>
+      <div class="grid" id="grid-kr"></div>
+    </section>
+  </main>
+
+  <footer>
+    데이터 출처: 네이버 금융 공개 API (비공식) · 실시간이 아닌 최근 체결/종가 기준이며 지연될 수 있습니다.<br>
+    해외 지수·종목 데이터는 네이버의 비공식 엔드포인트를 사용하므로, 일부 항목이 일시적으로 표시되지 않을 수 있습니다. 그 경우 카드에 사유가 표시됩니다.
+  </footer>
+
+<script>
+const CONFIG = {
+  domesticIndex: [
+    { code: 'KOSPI',  label: '코스피' },
+    { code: 'KOSDAQ', label: '코스닥' },
+  ],
+  worldIndex: [
+    { code: '.DJI',  label: '다우존스' },
+    { code: '.IXIC', label: '나스닥' },
+    { code: '.SPX',  altCodes: ['.INX', '.GSPC'], label: 'S&P 500' },
+  ],
+  usStocks: [
+    { code: 'AAPL.O', label: 'Apple' },
+    { code: 'MSFT.O', label: 'Microsoft' },
+    { code: 'GOOG.O', label: 'Alphabet' },
+    { code: 'AMZN.O', label: 'Amazon' },
+    { code: 'NVDA.O', label: 'Nvidia' },
+    { code: 'META.O', label: 'Meta' },
+    { code: 'TSLA.O', label: 'Tesla' },
+  ],
+  krStocks: [
+    { code: '005930', label: '삼성전자' },
+    { code: '000660', label: 'SK하이닉스' },
+  ],
+};
+
+function fmtNum(v){
+  if (v === null || v === undefined) return '—';
+  const s = String(v).trim();
+  if (s === '') return '—';
+  return s;
+}
+
+function directionClass(item){
+  // Naver: compareToPreviousPrice.code -> 2 rising, 5 falling, others flat
+  const code = item?.compareToPreviousPrice?.code;
+  if (code === '2' || code === 2) return 'up';
+  if (code === '5' || code === 5) return 'down';
+  const ratio = parseFloat(String(item?.fluctuationsRatio ?? '0').replace(/,/g,''));
+  if (ratio > 0) return 'up';
+  if (ratio < 0) return 'down';
+  return 'flat';
+}
+
+// 네이버 금융 API는 브라우저의 직접 요청을 CORS로 막기 때문에,
+// 무료 프록시를 거쳐서 응답에 허용 헤더를 붙여 받습니다.
+// 프록시마다 허용하는 출처(origin)가 달라서, 하나가 막히면 다음 걸 순서대로 시도합니다.
+const CORS_PROXIES = [
+  { name: 'allorigins',  build: url => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url) },
+  { name: 'codetabs',    build: url => 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(url) },
+  { name: 'corsproxy.io',build: url => 'https://corsproxy.io/?url=' + encodeURIComponent(url) },
+  { name: 'isomorphic',  build: url => 'https://cors.isomorphic-git.org/' + url },
+  { name: 'r.jina.ai',   build: url => 'https://r.jina.ai/' + url },
+];
+
+async function fetchJson(targetUrl){
+  const attempts = [];
+  for (const proxy of CORS_PROXIES){
+    try{
+      const res = await fetch(proxy.build(targetUrl), { cache: 'no-store' });
+      if (!res.ok){ attempts.push(`${proxy.name}:${res.status}`); continue; }
+      const text = await res.text();
+      return JSON.parse(text); // r.jina.ai wraps plain text; others return raw JSON text too
+    }catch(e){
+      attempts.push(`${proxy.name}:${e.message}`);
+    }
+  }
+  throw new Error(attempts.join(' / '));
+}
+
+async function fetchGroup(baseUrl, codes){
+  if (codes.length === 0) return [];
+  const url = baseUrl + codes.join(',');
+  const json = await fetchJson(url);
+  return json?.datas || [];
+}
+
+// match returned datas[] items back to requested codes, tolerant of key naming differences
+// and, if a def has altCodes, tries those as a fallback when the primary code isn't found
+function matchItems(datas, defs){
+  return defs.map((def, i) => {
+    const candidates = [def.code, ...(def.altCodes || [])];
+    for (const code of candidates){
+      const found = datas.find(d =>
+        d.itemCode === code || d.cd === code || d.reutersCode === code || d.symbolCode === code
+      );
+      if (found) return found;
+    }
+    return datas[i] || null;
+  });
+}
+
+function renderCard(container, def, item, opts = {}){
+  const card = document.createElement('div');
+  if (!item){
+    card.className = 'card error';
+    const reason = opts.errorMsg ? opts.errorMsg : '일시적 오류 — 새로고침을 눌러보세요';
+    card.innerHTML = `
+      <div class="label"><span>${def.label}</span><span class="code">${def.code}</span></div>
+      <div class="price">불러올 수 없음</div>
+      <div class="delta">${reason}</div>
+    `;
+    container.appendChild(card);
+    return null;
+  }
+  const dir = directionClass(item);
+  card.className = `card ${dir}`;
+  const price = fmtNum(item.closePrice);
+  const change = fmtNum(item.compareToPreviousClosePrice);
+  const pct = fmtNum(item.fluctuationsRatio);
+  const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '·';
+  const sign = dir === 'up' ? '+' : '';
+  const unit = opts.unit || '';
+  card.innerHTML = `
+    <div class="label"><span>${def.label}</span><span class="code">${def.code}</span></div>
+    <div class="price num">${price}<span class="unit">${unit}</span></div>
+    <div class="delta num"><span class="arrow">${arrow}</span> ${sign}${change} (${sign}${pct}%)</div>
+  `;
+  container.appendChild(card);
+  return { def, item, dir, price, change, pct };
+}
+
+function renderSkeletons(container, defs){
+  container.innerHTML = '';
+  defs.forEach(def => {
+    const card = document.createElement('div');
+    card.className = 'card skeleton';
+    card.innerHTML = `
+      <div class="label"><span>${def.label}</span><span class="code">${def.code}</span></div>
+      <div class="price">000,000</div>
+      <div class="delta">+000 (+0.00%)</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function buildTape(entries){
+  const track = document.getElementById('tape-track');
+  const parts = entries.map(e => {
+    if (!e) return '';
+    const sign = e.dir === 'up' ? '+' : '';
+    const arrow = e.dir === 'up' ? '▲' : e.dir === 'down' ? '▼' : '·';
+    return `<span class="tape-item ${e.dir}">
+        <span class="name">${e.def.label}</span>
+        <span class="price num">${e.price}</span>
+        <span class="chg num">${arrow} ${sign}${e.pct}%</span>
+      </span>`;
+  }).join('');
+  // duplicate content once so the 50% translateX loop is seamless
+  track.innerHTML = parts + parts;
+}
+
+function setLoading(isLoading){
+  const btn = document.getElementById('refresh-btn');
+  btn.classList.toggle('loading', isLoading);
+  btn.disabled = isLoading;
+}
+
+function sleep(ms){ return new Promise(r => setTimeout(r, ms)); }
+
+async function loadAll(){
+  setLoading(true);
+  document.getElementById('last-updated').textContent = '갱신 중…';
+
+  const gridIndices = document.getElementById('grid-indices');
+  const gridUs = document.getElementById('grid-us');
+  const gridKr = document.getElementById('grid-kr');
+
+  renderSkeletons(gridIndices, [...CONFIG.domesticIndex, ...CONFIG.worldIndex]);
+  renderSkeletons(gridUs, CONFIG.usStocks);
+  renderSkeletons(gridKr, CONFIG.krStocks);
+
+  const tapeEntries = [];
+
+  // 국내 지수
+  let domesticIdxItems = [], domesticIdxErr = null;
+  try{
+    const datas = await fetchGroup('https://polling.finance.naver.com/api/realtime/domestic/index/', CONFIG.domesticIndex.map(d => d.code));
+    domesticIdxItems = matchItems(datas, CONFIG.domesticIndex);
+  }catch(e){ domesticIdxItems = CONFIG.domesticIndex.map(() => null); domesticIdxErr = e.message; }
+
+  await sleep(350);
+
+  // 해외 지수 (S&P500은 코드 후보를 여러 개 같이 요청)
+  let worldIdxItems = [], worldIdxErr = null;
+  try{
+    const allWorldCodes = CONFIG.worldIndex.flatMap(d => [d.code, ...(d.altCodes || [])]);
+    const datas = await fetchGroup('https://polling.finance.naver.com/api/realtime/worldstock/index/', allWorldCodes);
+    worldIdxItems = matchItems(datas, CONFIG.worldIndex);
+  }catch(e){ worldIdxItems = CONFIG.worldIndex.map(() => null); worldIdxErr = e.message; }
+
+  gridIndices.innerHTML = '';
+  CONFIG.domesticIndex.forEach((def, i) => {
+    const r = renderCard(gridIndices, def, domesticIdxItems[i], { errorMsg: domesticIdxErr });
+    if (r) tapeEntries.push(r);
+  });
+  CONFIG.worldIndex.forEach((def, i) => {
+    const r = renderCard(gridIndices, def, worldIdxItems[i], { errorMsg: worldIdxErr });
+    if (r) tapeEntries.push(r);
+  });
+
+  await sleep(350);
+
+  // 미국 M7
+  let usItems = [], usErr = null;
+  try{
+    const datas = await fetchGroup('https://polling.finance.naver.com/api/realtime/worldstock/stock/', CONFIG.usStocks.map(d => d.code));
+    usItems = matchItems(datas, CONFIG.usStocks);
+  }catch(e){ usItems = CONFIG.usStocks.map(() => null); usErr = e.message; }
+
+  gridUs.innerHTML = '';
+  CONFIG.usStocks.forEach((def, i) => {
+    const r = renderCard(gridUs, def, usItems[i], { unit: ' $', errorMsg: usErr });
+    if (r) tapeEntries.push(r);
+  });
+
+  await sleep(350);
+
+  // 국내 종목
+  let krItems = [], krErr = null;
+  try{
+    const datas = await fetchGroup('https://polling.finance.naver.com/api/realtime/domestic/stock/', CONFIG.krStocks.map(d => d.code));
+    krItems = matchItems(datas, CONFIG.krStocks);
+  }catch(e){ krItems = CONFIG.krStocks.map(() => null); krErr = e.message; }
+
+  gridKr.innerHTML = '';
+  CONFIG.krStocks.forEach((def, i) => {
+    const r = renderCard(gridKr, def, krItems[i], { unit: ' 원', errorMsg: krErr });
+    if (r) tapeEntries.push(r);
+  });
+
+  buildTape(tapeEntries);
+
+  const now = new Date();
+  const kst = new Intl.DateTimeFormat('ko-KR', { hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false }).format(now);
+  document.getElementById('last-updated').textContent = `마지막 갱신 ${kst}`;
+  setLoading(false);
+}
+
+loadAll();
+</script>
+</body>
+</html>
