@@ -106,6 +106,46 @@
   #refresh-btn.loading .spin{ animation: spin 0.8s linear infinite; }
   @keyframes spin{ to{ transform: rotate(360deg); } }
 
+  .search-zone{
+    max-width: 1180px; margin: 0 auto 8px; padding: 0 24px;
+  }
+  #google-search-form{
+    display:flex; align-items:center; gap: 10px;
+    max-width: 420px;
+    margin: 0 auto;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: border-color .15s ease;
+  }
+  #google-search-form:focus-within{ border-color: var(--gold-dim); }
+  #google-search-form .search-icon{
+    color: var(--ink-faint); font-size: 16px; font-weight: 700;
+  }
+  #google-search-input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  #google-search-input::placeholder{ color: var(--ink-faint); }
+  #google-search-form button{
+    background: transparent;
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  #google-search-form button:hover{ background: rgba(201,162,39,0.08); border-color: var(--gold); }
+
   main{ max-width: 1180px; margin: 0 auto; padding: 8px 24px 80px; }
 
   .section{ margin-top: 36px; }
@@ -193,6 +233,7 @@
     .grid{ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
     header{ padding: 28px 18px 16px; }
     main{ padding: 8px 18px 60px; }
+    .search-zone{ padding: 0 18px; }
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -221,6 +262,20 @@
       </button>
     </div>
   </header>
+
+  <div class="search-zone">
+    <form id="google-search-form" action="https://www.google.com/search" method="GET" target="_blank">
+      <span class="search-icon">⌕</span>
+      <input
+        type="text"
+        name="q"
+        id="google-search-input"
+        placeholder="Google 검색…"
+        autocomplete="off"
+      >
+      <button type="submit">검색</button>
+    </form>
+  </div>
 
   <main>
     <section class="section">
