@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T05:53:14.150519+09:00",
+  "updatedAt": "2026-07-27T06:58:34.220973+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -964,5 +964,11 @@
       "marketValueFull": "1,253,643,460,035,000",
       "marketValueFullRaw": "1253643460035000"
     }
-  ]
+  ],
+  "errors": {
+    "domesticIndex": "HTTPSConnectionPool(host='polling.finance.naver.com', port=443): Max retries exceeded with url: /api/realtime/domestic/index/KOSPI,KOSDAQ (Caused by ConnectTimeoutError(<HTTPSConnection(host='polling.finance.naver.com', port=443) at 0x7f89556c3a50>, 'Connection to polling.finance.naver.com timed out. (connect timeout=10)'))",
+    "worldIndex": "HTTPSConnectionPool(host='polling.finance.naver.com', port=443): Max retries exceeded with url: /api/realtime/worldstock/index/.DJI,.IXIC,.SPX,.INX,.GSPC (Caused by ConnectTimeoutError(<HTTPSConnection(host='polling.finance.naver.com', port=443) at 0x7f8955414ad0>, 'Connection to polling.finance.naver.com timed out. (connect timeout=10)'))",
+    "usStocks": "HTTPSConnectionPool(host='polling.finance.naver.com', port=443): Max retries exceeded with url: /api/realtime/worldstock/stock/AAPL.O,MSFT.O,GOOG.O,AMZN.O,NVDA.O,META.O,TSLA.O (Caused by ConnectTimeoutError(<HTTPSConnection(host='polling.finance.naver.com', port=443) at 0x7f8955416990>, 'Connection to polling.finance.naver.com timed out. (connect timeout=10)'))",
+    "krStocks": "HTTPSConnectionPool(host='polling.finance.naver.com', port=443): Max retries exceeded with url: /api/realtime/domestic/stock/005930,000660 (Caused by ConnectTimeoutError(<HTTPSConnection(host='polling.finance.naver.com', port=443) at 0x7f8955424890>, 'Connection to polling.finance.naver.com timed out. (connect timeout=10)'))"
+  }
 }
