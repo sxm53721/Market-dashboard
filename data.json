@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T18:22:47.072384+09:00",
+  "updatedAt": "2026-08-01T19:57:08.040242+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -35,12 +35,12 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-07-31T18:59:00+09:00",
       "symbolCode": "KOSPI",
+      "compareToPreviousClosePriceRaw": "1001.89",
       "closePriceRaw": "6595.45",
       "fluctuationsRatioRaw": "17.91",
       "openPriceRaw": "5657.79",
       "highPriceRaw": "6630.77",
       "lowPriceRaw": "5629.76",
-      "compareToPreviousClosePriceRaw": "1001.89",
       "accumulatedTradingVolumeRaw": "434445000",
       "accumulatedTradingValueRaw": "49567651000000"
     },
@@ -78,12 +78,12 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-07-31T18:59:00+09:00",
       "symbolCode": "KOSDAQ",
+      "compareToPreviousClosePriceRaw": "74.98",
       "closePriceRaw": "719.76",
       "fluctuationsRatioRaw": "11.63",
       "openPriceRaw": "666.47",
       "highPriceRaw": "723.56",
       "lowPriceRaw": "663.25",
-      "compareToPreviousClosePriceRaw": "74.98",
       "accumulatedTradingVolumeRaw": "445906000",
       "accumulatedTradingValueRaw": "5435747000000"
     }
@@ -781,9 +781,9 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "stockType": "domestic",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
         "name": "KOSPI"
       },
       "closePrice": "262,500",
@@ -855,16 +855,16 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
-      "closePriceRaw": "262500",
-      "compareToPreviousClosePriceRaw": "55500",
-      "fluctuationsRatioRaw": "26.81",
+      "marketValueFull": "1,534,648,134,600,000",
+      "marketValueFullRaw": "1534648134600000",
+      "lowPriceRaw": "243000",
       "openPriceRaw": "257000",
       "highPriceRaw": "267000",
-      "lowPriceRaw": "243000",
+      "fluctuationsRatioRaw": "26.81",
+      "closePriceRaw": "262500",
       "accumulatedTradingVolumeRaw": "57883859",
       "accumulatedTradingValueRaw": "14769098000000",
-      "marketValueFull": "1,534,648,134,600,000",
-      "marketValueFullRaw": "1534648134600000"
+      "compareToPreviousClosePriceRaw": "55500"
     },
     {
       "itemCode": "000660",
@@ -879,9 +879,9 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "stockType": "domestic",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
         "name": "KOSPI"
       },
       "closePrice": "1,718,000",
@@ -953,16 +953,16 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
-      "closePriceRaw": "1718000",
-      "compareToPreviousClosePriceRaw": "396000",
-      "fluctuationsRatioRaw": "29.95",
+      "marketValueFull": "1,254,985,883,070,000",
+      "marketValueFullRaw": "1254985883070000",
+      "lowPriceRaw": "1586000",
       "openPriceRaw": "1697000",
       "highPriceRaw": "1718000",
-      "lowPriceRaw": "1586000",
+      "fluctuationsRatioRaw": "29.95",
+      "closePriceRaw": "1718000",
       "accumulatedTradingVolumeRaw": "10347350",
       "accumulatedTradingValueRaw": "17287902000000",
-      "marketValueFull": "1,254,985,883,070,000",
-      "marketValueFullRaw": "1254985883070000"
+      "compareToPreviousClosePriceRaw": "396000"
     }
   ]
 }
