@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T18:57:14.551057+09:00",
+  "updatedAt": "2026-08-12T20:00:18.875405+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -14,8 +14,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "nationCode": "KOR",
         "nationName": "대한민국",
+        "nationCode": "KOR",
         "stockType": "domestic",
         "name": "KOSPI"
       },
@@ -33,16 +33,16 @@
       "accumulatedTradingVolume": "360,651천주",
       "accumulatedTradingValue": "27,099,499백만",
       "marketStatus": "CLOSE",
-      "localTradedAt": "2026-08-12T18:57:00+09:00",
+      "localTradedAt": "2026-08-12T18:59:00+09:00",
       "symbolCode": "KOSPI",
+      "compareToPreviousClosePriceRaw": "233.51",
       "accumulatedTradingVolumeRaw": "360651000",
       "accumulatedTradingValueRaw": "27099499000000",
+      "closePriceRaw": "6579.04",
       "fluctuationsRatioRaw": "3.68",
       "openPriceRaw": "6438.50",
       "highPriceRaw": "6668.43",
-      "lowPriceRaw": "6413.50",
-      "compareToPreviousClosePriceRaw": "233.51",
-      "closePriceRaw": "6579.04"
+      "lowPriceRaw": "6413.50"
     },
     {
       "itemCode": "KOSDAQ",
@@ -57,8 +57,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스닥",
         "nameEng": "KOSDAQ",
-        "nationCode": "KOR",
         "nationName": "대한민국",
+        "nationCode": "KOR",
         "stockType": "domestic",
         "name": "KOSDAQ"
       },
@@ -76,16 +76,16 @@
       "accumulatedTradingVolume": "561,958천주",
       "accumulatedTradingValue": "6,570,350백만",
       "marketStatus": "CLOSE",
-      "localTradedAt": "2026-08-12T18:57:00+09:00",
+      "localTradedAt": "2026-08-12T18:59:00+09:00",
       "symbolCode": "KOSDAQ",
+      "compareToPreviousClosePriceRaw": "1.07",
       "accumulatedTradingVolumeRaw": "561958000",
       "accumulatedTradingValueRaw": "6570350000000",
+      "closePriceRaw": "858.91",
       "fluctuationsRatioRaw": "0.12",
       "openPriceRaw": "854.85",
       "highPriceRaw": "860.76",
-      "lowPriceRaw": "839.86",
-      "compareToPreviousClosePriceRaw": "1.07",
-      "closePriceRaw": "858.91"
+      "lowPriceRaw": "839.86"
     }
   ],
   "worldIndex": [
@@ -123,14 +123,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-08-11T16:41:12-04:00",
       "symbolCode": "DJI",
-      "accumulatedTradingVolumeRaw": "379390000",
-      "accumulatedTradingValueRaw": "",
+      "closePriceRaw": "53791.85",
       "fluctuationsRatioRaw": "-0.34",
       "openPriceRaw": "53961.60",
       "highPriceRaw": "54222.85",
       "lowPriceRaw": "53746.43",
       "compareToPreviousClosePriceRaw": "-184.13",
-      "closePriceRaw": "53791.85"
+      "accumulatedTradingVolumeRaw": "379390000",
+      "accumulatedTradingValueRaw": ""
     },
     {
       "reutersCode": ".IXIC",
@@ -166,14 +166,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-08-11T17:15:59-04:00",
       "symbolCode": "IXIC",
-      "accumulatedTradingVolumeRaw": "1453676000",
-      "accumulatedTradingValueRaw": "",
+      "closePriceRaw": "26445.45",
       "fluctuationsRatioRaw": "-0.60",
       "openPriceRaw": "26672.18",
       "highPriceRaw": "26679.26",
       "lowPriceRaw": "26372.31",
       "compareToPreviousClosePriceRaw": "-159.91",
-      "closePriceRaw": "26445.45"
+      "accumulatedTradingVolumeRaw": "1453676000",
+      "accumulatedTradingValueRaw": ""
     },
     {
       "reutersCode": ".INX",
@@ -209,14 +209,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-08-11T16:34:05-04:00",
       "symbolCode": "SPX",
-      "accumulatedTradingVolumeRaw": "2502547000",
-      "accumulatedTradingValueRaw": "",
+      "closePriceRaw": "7728.20",
       "fluctuationsRatioRaw": "-0.32",
       "openPriceRaw": "7767.51",
       "highPriceRaw": "7767.51",
       "lowPriceRaw": "7717.25",
       "compareToPreviousClosePriceRaw": "-24.91",
-      "closePriceRaw": "7728.20"
+      "accumulatedTradingVolumeRaw": "2502547000",
+      "accumulatedTradingValueRaw": ""
     }
   ],
   "usStocks": [
@@ -265,15 +265,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "304.70",
+        "overPrice": "304.64",
         "compareToPreviousPrice": {
           "code": "5",
           "text": "하락",
           "name": "FALLING"
         },
-        "compareToPreviousClosePrice": "-0.21",
-        "fluctuationsRatio": "-0.07",
-        "localTradedAt": "2026-08-12T05:56:55-04:00"
+        "compareToPreviousClosePrice": "-0.27",
+        "fluctuationsRatio": "-0.09",
+        "localTradedAt": "2026-08-12T07:00:16-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -285,16 +285,16 @@
       "stockEndUrl": null,
       "marketValueFull": "4,449,911,423,800",
       "marketValueHangeul": "4조 4,499억 USD",
-      "marketValueKrwHangeul": "6,300조 1,846억원",
-      "marketValueKrwRaw": "6300184593816040",
-      "accumulatedTradingValueKrwRaw": "16218219775400",
-      "marketValueFullRaw": "4449911423800",
-      "closePriceRaw": "304.91",
+      "marketValueKrwHangeul": "6,306조 4,145억원",
+      "marketValueKrwRaw": "6306414469809360",
+      "accumulatedTradingValueKrwRaw": "16234257003600",
       "compareToPreviousClosePriceRaw": "-3.35",
+      "closePriceRaw": "304.91",
       "fluctuationsRatioRaw": "-1.09",
       "openPriceRaw": "307.75",
       "highPriceRaw": "309.97",
       "lowPriceRaw": "302.79",
+      "marketValueFullRaw": "4449911423800",
       "accumulatedTradingVolumeRaw": "37476746",
       "accumulatedTradingValueRaw": "11455163000"
     },
@@ -343,15 +343,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "499.92",
+        "overPrice": "499.89",
         "compareToPreviousPrice": {
           "code": "5",
           "text": "하락",
           "name": "FALLING"
         },
-        "compareToPreviousClosePrice": "-3.89",
-        "fluctuationsRatio": "-0.77",
-        "localTradedAt": "2026-08-12T05:56:20-04:00"
+        "compareToPreviousClosePrice": "-3.92",
+        "fluctuationsRatio": "-0.78",
+        "localTradedAt": "2026-08-12T07:00:16-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -363,16 +363,16 @@
       "stockEndUrl": null,
       "marketValueFull": "3,741,064,073,820",
       "marketValueHangeul": "3조 7,411억 USD",
-      "marketValueKrwHangeul": "5,296조 5,985억원",
-      "marketValueKrwRaw": "5296598515714356",
-      "accumulatedTradingValueKrwRaw": "16411639292400",
-      "marketValueFullRaw": "3741064073820",
-      "closePriceRaw": "503.81",
+      "marketValueKrwHangeul": "5,301조 8,360억원",
+      "marketValueKrwRaw": "5301836005417704",
+      "accumulatedTradingValueKrwRaw": "16427867781600",
       "compareToPreviousClosePriceRaw": "-2.25",
+      "closePriceRaw": "503.81",
       "fluctuationsRatioRaw": "-0.44",
       "openPriceRaw": "504.33",
       "highPriceRaw": "505.33",
       "lowPriceRaw": "499.55",
+      "marketValueFullRaw": "3741064073820",
       "accumulatedTradingVolumeRaw": "23049791",
       "accumulatedTradingValueRaw": "11591778000"
     },
@@ -421,15 +421,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "345.42",
+        "overPrice": "345.00",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "2.42",
-        "fluctuationsRatio": "0.71",
-        "localTradedAt": "2026-08-12T05:56:50-04:00"
+        "compareToPreviousClosePrice": "2.00",
+        "fluctuationsRatio": "0.58",
+        "localTradedAt": "2026-08-12T07:00:15-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -441,16 +441,16 @@
       "stockEndUrl": null,
       "marketValueFull": "1,895,761,000,000",
       "marketValueHangeul": "1조 8,958억 USD",
-      "marketValueKrwHangeul": "2,684조 184억원",
-      "marketValueKrwRaw": "2684018423800000",
-      "accumulatedTradingValueKrwRaw": "9011445241200",
-      "marketValueFullRaw": "1895761000000",
-      "closePriceRaw": "343.00",
+      "marketValueKrwHangeul": "2,686조 6,725억원",
+      "marketValueKrwRaw": "2686672489200000",
+      "accumulatedTradingValueKrwRaw": "9020356120800",
       "compareToPreviousClosePriceRaw": "-12.84",
+      "closePriceRaw": "343.00",
       "fluctuationsRatioRaw": "-3.61",
       "openPriceRaw": "354.00",
       "highPriceRaw": "355.00",
       "lowPriceRaw": "342.57",
+      "marketValueFullRaw": "1895761000000",
       "accumulatedTradingVolumeRaw": "18390185",
       "accumulatedTradingValueRaw": "6364914000"
     },
@@ -499,15 +499,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "273.00",
+        "overPrice": "273.18",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "0.73",
-        "fluctuationsRatio": "0.27",
-        "localTradedAt": "2026-08-12T05:56:41-04:00"
+        "compareToPreviousClosePrice": "0.91",
+        "fluctuationsRatio": "0.33",
+        "localTradedAt": "2026-08-12T07:00:09-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -519,16 +519,16 @@
       "stockEndUrl": null,
       "marketValueFull": "2,936,789,596,248",
       "marketValueHangeul": "2조 9,368억 USD",
-      "marketValueKrwHangeul": "4,157조 9,067억원",
-      "marketValueKrwRaw": "4157906710367918",
-      "accumulatedTradingValueKrwRaw": "12328181853400",
-      "marketValueFullRaw": "2936789596248",
-      "closePriceRaw": "272.27",
+      "marketValueKrwHangeul": "4,162조 182억원",
+      "marketValueKrwRaw": "4162018215802666",
+      "accumulatedTradingValueKrwRaw": "12340372455600",
       "compareToPreviousClosePriceRaw": "-5.82",
+      "closePriceRaw": "272.27",
       "fluctuationsRatioRaw": "-2.09",
       "openPriceRaw": "278.69",
       "highPriceRaw": "278.84",
       "lowPriceRaw": "271.36",
+      "marketValueFullRaw": "2936789596248",
       "accumulatedTradingVolumeRaw": "31895708",
       "accumulatedTradingValueRaw": "8707573000"
     },
@@ -577,15 +577,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "220.00",
+        "overPrice": "219.90",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "2.50",
-        "fluctuationsRatio": "1.15",
-        "localTradedAt": "2026-08-12T05:57:05-04:00"
+        "compareToPreviousClosePrice": "2.40",
+        "fluctuationsRatio": "1.10",
+        "localTradedAt": "2026-08-12T07:00:15-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -597,16 +597,16 @@
       "stockEndUrl": null,
       "marketValueFull": "5,263,500,000,000",
       "marketValueHangeul": "5조 2,635억 USD",
-      "marketValueKrwHangeul": "7,452조 633억원",
-      "marketValueKrwRaw": "7452063300000000",
-      "accumulatedTradingValueKrwRaw": "31338917054000",
-      "marketValueFullRaw": "5263500000000",
-      "closePriceRaw": "217.50",
+      "marketValueKrwHangeul": "7,459조 4,322억원",
+      "marketValueKrwRaw": "7459432200000000",
+      "accumulatedTradingValueKrwRaw": "31369906236000",
       "compareToPreviousClosePriceRaw": "-0.05",
+      "closePriceRaw": "217.50",
       "fluctuationsRatioRaw": "-0.02",
       "openPriceRaw": "222.17",
       "highPriceRaw": "222.20",
       "lowPriceRaw": "216.20",
+      "marketValueFullRaw": "5263500000000",
       "accumulatedTradingVolumeRaw": "101273148",
       "accumulatedTradingValueRaw": "22135130000"
     },
@@ -655,15 +655,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "601.98",
+        "overPrice": "602.55",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "2.86",
-        "fluctuationsRatio": "0.48",
-        "localTradedAt": "2026-08-12T05:56:55-04:00"
+        "compareToPreviousClosePrice": "3.43",
+        "fluctuationsRatio": "0.57",
+        "localTradedAt": "2026-08-12T07:00:17-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -675,16 +675,16 @@
       "stockEndUrl": null,
       "marketValueFull": "1,526,261,929,522",
       "marketValueHangeul": "1조 5,263억 USD",
-      "marketValueKrwHangeul": "2,160조 8,816억원",
-      "marketValueKrwRaw": "2160881639817248",
-      "accumulatedTradingValueKrwRaw": "11235659962200",
-      "marketValueFullRaw": "1526261929522",
-      "closePriceRaw": "599.12",
+      "marketValueKrwHangeul": "2,163조 184억원",
+      "marketValueKrwRaw": "2163018406518578",
+      "accumulatedTradingValueKrwRaw": "11246770234800",
       "compareToPreviousClosePriceRaw": "4.20",
+      "closePriceRaw": "599.12",
       "fluctuationsRatioRaw": "0.71",
       "openPriceRaw": "598.00",
       "highPriceRaw": "612.43",
       "lowPriceRaw": "593.40",
+      "marketValueFullRaw": "1526261929522",
       "accumulatedTradingVolumeRaw": "13146894",
       "accumulatedTradingValueRaw": "7935909000"
     },
@@ -733,15 +733,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "PRE_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "334.11",
+        "overPrice": "333.84",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "1.30",
-        "fluctuationsRatio": "0.39",
-        "localTradedAt": "2026-08-12T05:57:10-04:00"
+        "compareToPreviousClosePrice": "1.03",
+        "fluctuationsRatio": "0.31",
+        "localTradedAt": "2026-08-12T07:00:14-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -753,16 +753,16 @@
       "stockEndUrl": null,
       "marketValueFull": "1,314,448,868,197",
       "marketValueHangeul": "1조 3,144억 USD",
-      "marketValueKrwHangeul": "1,860조 9,967억원",
-      "marketValueKrwRaw": "1860996707593313",
-      "accumulatedTradingValueKrwRaw": "11004353637200",
-      "marketValueFullRaw": "1314448868197",
-      "closePriceRaw": "332.81",
+      "marketValueKrwHangeul": "1,862조 8,369억원",
+      "marketValueKrwRaw": "1862836936008788",
+      "accumulatedTradingValueKrwRaw": "11015235184800",
       "compareToPreviousClosePriceRaw": "1.93",
+      "closePriceRaw": "332.81",
       "fluctuationsRatioRaw": "0.58",
       "openPriceRaw": "332.80",
       "highPriceRaw": "336.20",
       "lowPriceRaw": "329.53",
+      "marketValueFullRaw": "1314448868197",
       "accumulatedTradingVolumeRaw": "23345233",
       "accumulatedTradingValueRaw": "7772534000"
     }
@@ -781,8 +781,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "nationName": "대한민국",
         "nationCode": "KOR",
+        "nationName": "대한민국",
         "stockType": "domestic",
         "name": "KOSPI"
       },
@@ -811,7 +811,7 @@
       "localTradedAt": "2026-08-12T15:30:00+09:00",
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
-        "overMarketStatus": "OPEN",
+        "overMarketStatus": "CLOSE",
         "overPrice": "258,000",
         "openPrice": "242,000",
         "highPrice": "260,500",
@@ -823,7 +823,7 @@
         },
         "compareToPreviousClosePrice": "18,500",
         "fluctuationsRatio": "7.72",
-        "localTradedAt": "2026-08-12T18:57:14.465069+09:00",
+        "localTradedAt": "2026-08-12T20:00:00.000000+09:00",
         "tradeStopType": {
           "code": "1",
           "text": "운영.Trading",
@@ -832,19 +832,19 @@
         "tradableStatus": "tradable",
         "tradableStatusCode": "ok",
         "tradableStatusUpdatedAt": "2026-08-12T07:10:12.743+09:00",
-        "accumulatedTradingVolume": "18,308,212",
-        "accumulatedTradingValue": "4조 6,211억",
-        "accumulatedTradingVolumeRaw": "18308212",
-        "accumulatedTradingValueRaw": "4621094000000"
+        "accumulatedTradingVolume": "19,366,585",
+        "accumulatedTradingValue": "4조 8,945억",
+        "accumulatedTradingVolumeRaw": "19366585",
+        "accumulatedTradingValueRaw": "4894529000000"
       },
       "integratedPriceInfo": {
         "openPrice": "242,000",
         "highPrice": "260,500",
         "lowPrice": "241,000",
-        "accumulatedTradingVolume": "45,410,691",
-        "accumulatedTradingValue": "11조 4,900억",
-        "accumulatedTradingVolumeRaw": "45410691",
-        "accumulatedTradingValueRaw": "11490012000000"
+        "accumulatedTradingVolume": "46,469,064",
+        "accumulatedTradingValue": "11조 7,634억",
+        "accumulatedTradingVolumeRaw": "46469064",
+        "accumulatedTradingValueRaw": "11763447000000"
       },
       "isinCode": "KR7005930003",
       "myDataCode": null,
@@ -879,8 +879,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "nationName": "대한민국",
         "nationCode": "KOR",
+        "nationName": "대한민국",
         "stockType": "domestic",
         "name": "KOSPI"
       },
@@ -909,8 +909,8 @@
       "localTradedAt": "2026-08-12T15:30:00+09:00",
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
-        "overMarketStatus": "OPEN",
-        "overPrice": "1,525,000",
+        "overMarketStatus": "CLOSE",
+        "overPrice": "1,521,000",
         "openPrice": "1,452,000",
         "highPrice": "1,549,000",
         "lowPrice": "1,441,000",
@@ -919,9 +919,9 @@
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "100,000",
-        "fluctuationsRatio": "7.02",
-        "localTradedAt": "2026-08-12T18:57:14.465089+09:00",
+        "compareToPreviousClosePrice": "96,000",
+        "fluctuationsRatio": "6.74",
+        "localTradedAt": "2026-08-12T20:00:00.000000+09:00",
         "tradeStopType": {
           "code": "1",
           "text": "운영.Trading",
@@ -930,19 +930,19 @@
         "tradableStatus": "tradable",
         "tradableStatusCode": "ok",
         "tradableStatusUpdatedAt": "2026-08-12T07:10:11.337+09:00",
-        "accumulatedTradingVolume": "2,998,112",
-        "accumulatedTradingValue": "4조 4,705억",
-        "accumulatedTradingVolumeRaw": "2998112",
-        "accumulatedTradingValueRaw": "4470466000000"
+        "accumulatedTradingVolume": "3,155,051",
+        "accumulatedTradingValue": "4조 7,096억",
+        "accumulatedTradingVolumeRaw": "3155051",
+        "accumulatedTradingValueRaw": "4709577000000"
       },
       "integratedPriceInfo": {
         "openPrice": "1,452,000",
         "highPrice": "1,549,000",
         "lowPrice": "1,440,000",
-        "accumulatedTradingVolume": "7,202,413",
-        "accumulatedTradingValue": "10조 7,528억",
-        "accumulatedTradingVolumeRaw": "7202413",
-        "accumulatedTradingValueRaw": "10752848000000"
+        "accumulatedTradingVolume": "7,359,352",
+        "accumulatedTradingValue": "10조 9,920억",
+        "accumulatedTradingVolumeRaw": "7359352",
+        "accumulatedTradingValueRaw": "10991959000000"
       },
       "isinCode": "KR7000660001",
       "myDataCode": null,
