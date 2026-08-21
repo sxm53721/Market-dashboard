@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:19:15.346512+09:00",
+  "updatedAt": "2026-08-22T06:47:28.957502+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -14,10 +14,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSPI"
+        "stockType": "domestic"
       },
       "closePrice": "6,912.95",
       "compareToPreviousClosePrice": "60.37",
@@ -35,14 +35,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-08-21T18:59:00+09:00",
       "symbolCode": "KOSPI",
-      "accumulatedTradingVolumeRaw": "408037000",
-      "accumulatedTradingValueRaw": "28897810000000",
-      "compareToPreviousClosePriceRaw": "60.37",
       "closePriceRaw": "6912.95",
+      "compareToPreviousClosePriceRaw": "60.37",
       "fluctuationsRatioRaw": "0.88",
       "openPriceRaw": "6759.95",
       "highPriceRaw": "6954.12",
-      "lowPriceRaw": "6742.44"
+      "lowPriceRaw": "6742.44",
+      "accumulatedTradingVolumeRaw": "408037000",
+      "accumulatedTradingValueRaw": "28897810000000"
     },
     {
       "itemCode": "KOSDAQ",
@@ -57,10 +57,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스닥",
         "nameEng": "KOSDAQ",
+        "name": "KOSDAQ",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSDAQ"
+        "stockType": "domestic"
       },
       "closePrice": "801.94",
       "compareToPreviousClosePrice": "-38.95",
@@ -78,14 +78,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-08-21T18:59:00+09:00",
       "symbolCode": "KOSDAQ",
-      "accumulatedTradingVolumeRaw": "573177000",
-      "accumulatedTradingValueRaw": "5451775000000",
-      "compareToPreviousClosePriceRaw": "-38.95",
       "closePriceRaw": "801.94",
+      "compareToPreviousClosePriceRaw": "-38.95",
       "fluctuationsRatioRaw": "-4.63",
       "openPriceRaw": "824.05",
       "highPriceRaw": "824.05",
-      "lowPriceRaw": "795.57"
+      "lowPriceRaw": "795.57",
+      "accumulatedTradingVolumeRaw": "573177000",
+      "accumulatedTradingValueRaw": "5451775000000"
     }
   ],
   "worldIndex": [
@@ -234,10 +234,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "309.35",
       "compareToPreviousClosePrice": "-1.95",
@@ -265,15 +265,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "309.53",
+        "overPrice": "309.47",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "0.18",
-        "fluctuationsRatio": "0.06",
-        "localTradedAt": "2026-08-21T17:19:06-04:00"
+        "compareToPreviousClosePrice": "0.12",
+        "fluctuationsRatio": "0.04",
+        "localTradedAt": "2026-08-21T17:47:24-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -288,7 +288,6 @@
       "marketValueKrwHangeul": "6,264조 1,595억원",
       "marketValueKrwRaw": "6264159546412500",
       "accumulatedTradingValueKrwRaw": "19437205837500",
-      "compareToPreviousClosePriceRaw": "-1.95",
       "accumulatedTradingVolumeRaw": "45231016",
       "accumulatedTradingValueRaw": "14008797000",
       "closePriceRaw": "309.35",
@@ -296,7 +295,8 @@
       "openPriceRaw": "312.05",
       "highPriceRaw": "312.38",
       "lowPriceRaw": "307.01",
-      "marketValueFullRaw": "4514709583000"
+      "marketValueFullRaw": "4514709583000",
+      "compareToPreviousClosePriceRaw": "-1.95"
     },
     {
       "reutersCode": "MSFT.O",
@@ -312,10 +312,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "483.24",
       "compareToPreviousClosePrice": "2.09",
@@ -343,15 +343,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "482.96",
+        "overPrice": "482.97",
         "compareToPreviousPrice": {
           "code": "5",
           "text": "하락",
           "name": "FALLING"
         },
-        "compareToPreviousClosePrice": "-0.28",
+        "compareToPreviousClosePrice": "-0.27",
         "fluctuationsRatio": "-0.06",
-        "localTradedAt": "2026-08-21T17:18:29-04:00"
+        "localTradedAt": "2026-08-21T17:47:19-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -366,7 +366,6 @@
       "marketValueKrwHangeul": "4,978조 7,948억원",
       "marketValueKrwRaw": "4978794836761013",
       "accumulatedTradingValueKrwRaw": "14294807550000",
-      "compareToPreviousClosePriceRaw": "2.09",
       "accumulatedTradingVolumeRaw": "21330005",
       "accumulatedTradingValueRaw": "10302564000",
       "closePriceRaw": "483.24",
@@ -374,7 +373,8 @@
       "openPriceRaw": "479.88",
       "highPriceRaw": "486.36",
       "lowPriceRaw": "478.53",
-      "marketValueFullRaw": "3588320603071"
+      "marketValueFullRaw": "3588320603071",
+      "compareToPreviousClosePriceRaw": "2.09"
     },
     {
       "reutersCode": "GOOG.O",
@@ -390,10 +390,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "341.75",
       "compareToPreviousClosePrice": "3.55",
@@ -421,15 +421,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "341.88",
+        "overPrice": "342.22",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "0.13",
-        "fluctuationsRatio": "0.04",
-        "localTradedAt": "2026-08-21T17:19:04-04:00"
+        "compareToPreviousClosePrice": "0.47",
+        "fluctuationsRatio": "0.14",
+        "localTradedAt": "2026-08-21T17:47:17-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -444,7 +444,6 @@
       "marketValueKrwHangeul": "2,620조 7,825억원",
       "marketValueKrwRaw": "2620782496875000",
       "accumulatedTradingValueKrwRaw": "6824418750000",
-      "compareToPreviousClosePriceRaw": "3.55",
       "accumulatedTradingVolumeRaw": "14412576",
       "accumulatedTradingValueRaw": "4918500000",
       "closePriceRaw": "341.75",
@@ -452,7 +451,8 @@
       "openPriceRaw": "340.28",
       "highPriceRaw": "343.29",
       "lowPriceRaw": "337.81",
-      "marketValueFullRaw": "1888852250000"
+      "marketValueFullRaw": "1888852250000",
+      "compareToPreviousClosePriceRaw": "3.55"
     },
     {
       "reutersCode": "AMZN.O",
@@ -468,10 +468,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "258.63",
       "compareToPreviousClosePrice": "-1.48",
@@ -499,15 +499,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "259.41",
+        "overPrice": "259.29",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "0.78",
-        "fluctuationsRatio": "0.30",
-        "localTradedAt": "2026-08-21T17:19:05-04:00"
+        "compareToPreviousClosePrice": "0.66",
+        "fluctuationsRatio": "0.26",
+        "localTradedAt": "2026-08-21T17:47:22-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -522,7 +522,6 @@
       "marketValueKrwHangeul": "3,870조 6,592억원",
       "marketValueKrwRaw": "3870659187287325",
       "accumulatedTradingValueKrwRaw": "12758453775000",
-      "compareToPreviousClosePriceRaw": "-1.48",
       "accumulatedTradingVolumeRaw": "35488060",
       "accumulatedTradingValueRaw": "9195282000",
       "closePriceRaw": "258.63",
@@ -530,7 +529,8 @@
       "openPriceRaw": "260.74",
       "highPriceRaw": "261.09",
       "lowPriceRaw": "257.04",
-      "marketValueFullRaw": "2789664279126"
+      "marketValueFullRaw": "2789664279126",
+      "compareToPreviousClosePriceRaw": "-1.48"
     },
     {
       "reutersCode": "NVDA.O",
@@ -546,10 +546,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "214.72",
       "compareToPreviousClosePrice": "-2.13",
@@ -577,15 +577,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "215.04",
+        "overPrice": "215.18",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "0.32",
-        "fluctuationsRatio": "0.15",
-        "localTradedAt": "2026-08-21T17:19:12-04:00"
+        "compareToPreviousClosePrice": "0.46",
+        "fluctuationsRatio": "0.21",
+        "localTradedAt": "2026-08-21T17:47:20-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -600,7 +600,6 @@
       "marketValueKrwHangeul": "7,209조 7,608억원",
       "marketValueKrwRaw": "7209760800000000",
       "accumulatedTradingValueKrwRaw": "29399342062500",
-      "compareToPreviousClosePriceRaw": "-2.13",
       "accumulatedTradingVolumeRaw": "98176409",
       "accumulatedTradingValueRaw": "21188715000",
       "closePriceRaw": "214.72",
@@ -608,7 +607,8 @@
       "openPriceRaw": "218.42",
       "highPriceRaw": "218.74",
       "lowPriceRaw": "214.50",
-      "marketValueFullRaw": "5196224000000"
+      "marketValueFullRaw": "5196224000000",
+      "compareToPreviousClosePriceRaw": "-2.13"
     },
     {
       "reutersCode": "META.O",
@@ -624,10 +624,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "549.90",
       "compareToPreviousClosePrice": "4.07",
@@ -655,15 +655,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "550.06",
+        "overPrice": "550.86",
         "compareToPreviousPrice": {
           "code": "2",
           "text": "상승",
           "name": "RISING"
         },
-        "compareToPreviousClosePrice": "0.16",
-        "fluctuationsRatio": "0.03",
-        "localTradedAt": "2026-08-21T17:19:10-04:00"
+        "compareToPreviousClosePrice": "0.96",
+        "fluctuationsRatio": "0.17",
+        "localTradedAt": "2026-08-21T17:47:25-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -678,7 +678,6 @@
       "marketValueKrwHangeul": "1,943조 7,122억원",
       "marketValueKrwRaw": "1943712221465100",
       "accumulatedTradingValueKrwRaw": "10032998625000",
-      "compareToPreviousClosePriceRaw": "4.07",
       "accumulatedTradingVolumeRaw": "13151293",
       "accumulatedTradingValueRaw": "7230990000",
       "closePriceRaw": "549.90",
@@ -686,7 +685,8 @@
       "openPriceRaw": "546.89",
       "highPriceRaw": "553.87",
       "lowPriceRaw": "543.23",
-      "marketValueFullRaw": "1400873673128"
+      "marketValueFullRaw": "1400873673128",
+      "compareToPreviousClosePriceRaw": "4.07"
     },
     {
       "reutersCode": "TSLA.O",
@@ -702,10 +702,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "362.86",
       "compareToPreviousClosePrice": "17.73",
@@ -733,15 +733,15 @@
       "overMarketPriceInfo": {
         "tradingSessionType": "AFTER_MARKET",
         "overMarketStatus": "OPEN",
-        "overPrice": "362.57",
+        "overPrice": "362.76",
         "compareToPreviousPrice": {
           "code": "5",
           "text": "하락",
           "name": "FALLING"
         },
-        "compareToPreviousClosePrice": "-0.29",
-        "fluctuationsRatio": "-0.08",
-        "localTradedAt": "2026-08-21T17:19:11-04:00"
+        "compareToPreviousClosePrice": "-0.11",
+        "fluctuationsRatio": "-0.03",
+        "localTradedAt": "2026-08-21T17:47:24-04:00"
       },
       "currencyType": {
         "code": "USD",
@@ -756,7 +756,6 @@
       "marketValueKrwHangeul": "1,988조 4,717억원",
       "marketValueKrwRaw": "1988471714749463",
       "accumulatedTradingValueKrwRaw": "29323971675000",
-      "compareToPreviousClosePriceRaw": "17.73",
       "accumulatedTradingVolumeRaw": "58603964",
       "accumulatedTradingValueRaw": "21134394000",
       "closePriceRaw": "362.86",
@@ -764,7 +763,8 @@
       "openPriceRaw": "349.88",
       "highPriceRaw": "366.50",
       "lowPriceRaw": "346.90",
-      "marketValueFullRaw": "1433132767387"
+      "marketValueFullRaw": "1433132767387",
+      "compareToPreviousClosePriceRaw": "17.73"
     }
   ],
   "krStocks": [
@@ -781,10 +781,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSPI"
+        "stockType": "domestic"
       },
       "closePrice": "281,500",
       "compareToPreviousClosePrice": "10,500",
@@ -855,16 +855,16 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
+      "accumulatedTradingVolumeRaw": "27672192",
+      "accumulatedTradingValueRaw": "7682302000000",
       "closePriceRaw": "281500",
-      "compareToPreviousClosePriceRaw": "10500",
       "fluctuationsRatioRaw": "3.87",
       "openPriceRaw": "267000",
       "highPriceRaw": "285000",
       "lowPriceRaw": "266000",
-      "accumulatedTradingVolumeRaw": "27672192",
-      "accumulatedTradingValueRaw": "7682302000000",
       "marketValueFull": "1,645,727,428,152,000",
-      "marketValueFullRaw": "1645727428152000"
+      "marketValueFullRaw": "1645727428152000",
+      "compareToPreviousClosePriceRaw": "10500"
     },
     {
       "itemCode": "000660",
@@ -879,10 +879,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSPI"
+        "stockType": "domestic"
       },
       "closePrice": "1,730,000",
       "compareToPreviousClosePrice": "39,000",
@@ -953,16 +953,16 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
+      "accumulatedTradingVolumeRaw": "4247418",
+      "accumulatedTradingValueRaw": "7384023000000",
       "closePriceRaw": "1730000",
-      "compareToPreviousClosePriceRaw": "39000",
       "fluctuationsRatioRaw": "2.31",
       "openPriceRaw": "1675000",
       "highPriceRaw": "1773000",
       "lowPriceRaw": "1669000",
-      "accumulatedTradingVolumeRaw": "4247418",
-      "accumulatedTradingValueRaw": "7384023000000",
       "marketValueFull": "1,263,751,791,450,000",
-      "marketValueFullRaw": "1263751791450000"
+      "marketValueFullRaw": "1263751791450000",
+      "compareToPreviousClosePriceRaw": "39000"
     }
   ]
 }
