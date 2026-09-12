@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T14:02:59.347538+09:00",
+  "updatedAt": "2026-09-12T18:19:22.705136+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -14,10 +14,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSPI"
+        "stockType": "domestic"
       },
       "closePrice": "6,909.91",
       "compareToPreviousClosePrice": "-124.01",
@@ -57,10 +57,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스닥",
         "nameEng": "KOSDAQ",
+        "name": "KOSDAQ",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSDAQ"
+        "stockType": "domestic"
       },
       "closePrice": "820.64",
       "compareToPreviousClosePrice": "-16.28",
@@ -123,8 +123,8 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-09-11T16:46:29-04:00",
       "symbolCode": "DJI",
-      "compareToPreviousClosePriceRaw": "509.19",
       "closePriceRaw": "52573.29",
+      "compareToPreviousClosePriceRaw": "509.19",
       "fluctuationsRatioRaw": "0.98",
       "openPriceRaw": "52204.46",
       "highPriceRaw": "52720.24",
@@ -166,8 +166,8 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-09-11T17:15:59-04:00",
       "symbolCode": "IXIC",
-      "compareToPreviousClosePriceRaw": "251.31",
       "closePriceRaw": "26333.04",
+      "compareToPreviousClosePriceRaw": "251.31",
       "fluctuationsRatioRaw": "0.96",
       "openPriceRaw": "26289.41",
       "highPriceRaw": "26431.22",
@@ -209,8 +209,8 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-09-11T16:46:20-04:00",
       "symbolCode": "SPX",
-      "compareToPreviousClosePriceRaw": "65.28",
       "closePriceRaw": "7656.98",
+      "compareToPreviousClosePriceRaw": "65.28",
       "fluctuationsRatioRaw": "0.86",
       "openPriceRaw": "7636.75",
       "highPriceRaw": "7677.02",
@@ -781,10 +781,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "name": "KOSPI",
-        "nationCode": "KOR",
+        "stockType": "domestic",
         "nationName": "대한민국",
-        "stockType": "domestic"
+        "nationCode": "KOR",
+        "name": "KOSPI"
       },
       "closePrice": "259,500",
       "compareToPreviousClosePrice": "-9,500",
@@ -881,10 +881,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "name": "KOSPI",
-        "nationCode": "KOR",
+        "stockType": "domestic",
         "nationName": "대한민국",
-        "stockType": "domestic"
+        "nationCode": "KOR",
+        "name": "KOSPI"
       },
       "closePrice": "1,812,000",
       "compareToPreviousClosePrice": "-41,000",
