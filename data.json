@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T04:36:16.791208+09:00",
+  "updatedAt": "2026-09-20T06:45:45.315725+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -234,10 +234,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "336.13",
       "compareToPreviousClosePrice": "-0.87",
@@ -312,10 +312,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "493.78",
       "compareToPreviousClosePrice": "-3.97",
@@ -390,10 +390,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "344.41",
       "compareToPreviousClosePrice": "0.73",
@@ -468,10 +468,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "253.71",
       "compareToPreviousClosePrice": "2.52",
@@ -546,10 +546,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "222.27",
       "compareToPreviousClosePrice": "2.93",
@@ -624,10 +624,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "665.75",
       "compareToPreviousClosePrice": "-16.56",
@@ -702,10 +702,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "364.27",
       "compareToPreviousClosePrice": "-1.93",
@@ -856,6 +856,7 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
+      "marketSessionType": "afterMarket",
       "closePriceRaw": "260000",
       "compareToPreviousClosePriceRaw": "7500",
       "fluctuationsRatioRaw": "2.97",
@@ -865,8 +866,7 @@
       "accumulatedTradingVolumeRaw": "15042569",
       "accumulatedTradingValueRaw": "3915612000000",
       "marketValueFull": "1,520,032,438,080,000",
-      "marketValueFullRaw": "1520032438080000",
-      "marketSessionType": "afterMarket"
+      "marketValueFullRaw": "1520032438080000"
     },
     {
       "itemCode": "000660",
@@ -956,6 +956,7 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
+      "marketSessionType": "afterMarket",
       "closePriceRaw": "1849000",
       "compareToPreviousClosePriceRaw": "104000",
       "fluctuationsRatioRaw": "5.96",
@@ -965,8 +966,7 @@
       "accumulatedTradingVolumeRaw": "4444839",
       "accumulatedTradingValueRaw": "8185257000000",
       "marketValueFull": "1,350,680,382,885,000",
-      "marketValueFullRaw": "1350680382885000",
-      "marketSessionType": "afterMarket"
+      "marketValueFullRaw": "1350680382885000"
     }
   ]
 }
