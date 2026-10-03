@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T05:07:08.510367+09:00",
+  "updatedAt": "2026-10-04T08:02:01.073600+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -14,10 +14,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
+        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSPI"
+        "stockType": "domestic"
       },
       "closePrice": "7,003.74",
       "compareToPreviousClosePrice": "32.39",
@@ -35,14 +35,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-02T20:15:00+09:00",
       "symbolCode": "KOSPI",
-      "closePriceRaw": "7003.74",
-      "compareToPreviousClosePriceRaw": "32.39",
       "fluctuationsRatioRaw": "0.46",
       "openPriceRaw": "6938.27",
       "highPriceRaw": "7011.04",
       "lowPriceRaw": "6927.88",
       "accumulatedTradingVolumeRaw": "239009000",
-      "accumulatedTradingValueRaw": "15981136000000"
+      "accumulatedTradingValueRaw": "15981136000000",
+      "closePriceRaw": "7003.74",
+      "compareToPreviousClosePriceRaw": "32.39"
     },
     {
       "itemCode": "KOSDAQ",
@@ -57,10 +57,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스닥",
         "nameEng": "KOSDAQ",
+        "name": "KOSDAQ",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic",
-        "name": "KOSDAQ"
+        "stockType": "domestic"
       },
       "closePrice": "893.29",
       "compareToPreviousClosePrice": "-1.00",
@@ -78,14 +78,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-02T20:15:00+09:00",
       "symbolCode": "KOSDAQ",
-      "closePriceRaw": "893.29",
-      "compareToPreviousClosePriceRaw": "-1.00",
       "fluctuationsRatioRaw": "-0.11",
       "openPriceRaw": "893.22",
       "highPriceRaw": "903.88",
       "lowPriceRaw": "885.65",
       "accumulatedTradingVolumeRaw": "556961000",
-      "accumulatedTradingValueRaw": "8846913000000"
+      "accumulatedTradingValueRaw": "8846913000000",
+      "closePriceRaw": "893.29",
+      "compareToPreviousClosePriceRaw": "-1.00"
     }
   ],
   "worldIndex": [
@@ -102,10 +102,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "뉴욕 거래소",
         "nameEng": "New York Stock Exchange",
-        "name": "NYSE",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NYSE"
       },
       "closePrice": "51,176.96",
       "compareToPreviousClosePrice": "250.40",
@@ -145,10 +145,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NASDAQ"
       },
       "closePrice": "27,190.86",
       "compareToPreviousClosePrice": "319.27",
@@ -188,10 +188,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "뉴욕 거래소",
         "nameEng": "New York Stock Exchange",
-        "name": "NYSE",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock"
+        "stockType": "worldstock",
+        "name": "NYSE"
       },
       "closePrice": "7,722.72",
       "compareToPreviousClosePrice": "56.27",
@@ -856,7 +856,6 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
-      "marketSessionType": "afterMarket",
       "closePriceRaw": "276000",
       "compareToPreviousClosePriceRaw": "0",
       "fluctuationsRatioRaw": "0.00",
@@ -866,7 +865,8 @@
       "accumulatedTradingVolumeRaw": "11408387",
       "accumulatedTradingValueRaw": "3141812000000",
       "marketValueFull": "1,613,572,895,808,000",
-      "marketValueFullRaw": "1613572895808000"
+      "marketValueFullRaw": "1613572895808000",
+      "marketSessionType": "afterMarket"
     },
     {
       "itemCode": "000660",
@@ -956,7 +956,6 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
-      "marketSessionType": "afterMarket",
       "closePriceRaw": "1842000",
       "compareToPreviousClosePriceRaw": "9000",
       "fluctuationsRatioRaw": "0.49",
@@ -966,7 +965,8 @@
       "accumulatedTradingVolumeRaw": "2014287",
       "accumulatedTradingValueRaw": "3707834000000",
       "marketValueFull": "1,345,566,936,330,000",
-      "marketValueFullRaw": "1345566936330000"
+      "marketValueFullRaw": "1345566936330000",
+      "marketSessionType": "afterMarket"
     }
   ]
 }
