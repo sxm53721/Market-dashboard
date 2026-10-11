@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T17:12:32.803075+09:00",
+  "updatedAt": "2026-10-11T23:55:03.263264+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -35,14 +35,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-08T20:15:00+09:00",
       "symbolCode": "KOSPI",
-      "closePriceRaw": "6625.93",
       "compareToPreviousClosePriceRaw": "-177.97",
       "fluctuationsRatioRaw": "-2.62",
       "openPriceRaw": "6808.68",
       "highPriceRaw": "6810.83",
       "lowPriceRaw": "6625.93",
       "accumulatedTradingVolumeRaw": "302539000",
-      "accumulatedTradingValueRaw": "24376305000000"
+      "accumulatedTradingValueRaw": "24376305000000",
+      "closePriceRaw": "6625.93"
     },
     {
       "itemCode": "KOSDAQ",
@@ -78,14 +78,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-08T20:15:00+09:00",
       "symbolCode": "KOSDAQ",
-      "closePriceRaw": "892.27",
       "compareToPreviousClosePriceRaw": "-6.16",
       "fluctuationsRatioRaw": "-0.69",
       "openPriceRaw": "898.19",
       "highPriceRaw": "903.12",
       "lowPriceRaw": "883.85",
       "accumulatedTradingVolumeRaw": "588666000",
-      "accumulatedTradingValueRaw": "8060445000000"
+      "accumulatedTradingValueRaw": "8060445000000",
+      "closePriceRaw": "892.27"
     }
   ],
   "worldIndex": [
@@ -856,9 +856,6 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
-      "marketSessionType": "afterMarket",
-      "closePriceRaw": "263000",
-      "compareToPreviousClosePriceRaw": "-5500",
       "fluctuationsRatioRaw": "-2.05",
       "openPriceRaw": "269500",
       "highPriceRaw": "270000",
@@ -866,7 +863,10 @@
       "accumulatedTradingVolumeRaw": "20157893",
       "accumulatedTradingValueRaw": "5350036000000",
       "marketValueFull": "1,537,571,273,904,000",
-      "marketValueFullRaw": "1537571273904000"
+      "marketValueFullRaw": "1537571273904000",
+      "marketSessionType": "afterMarket",
+      "closePriceRaw": "263000",
+      "compareToPreviousClosePriceRaw": "-5500"
     },
     {
       "itemCode": "000660",
@@ -956,9 +956,6 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
-      "marketSessionType": "afterMarket",
-      "closePriceRaw": "1686000",
-      "compareToPreviousClosePriceRaw": "-37000",
       "fluctuationsRatioRaw": "-2.15",
       "openPriceRaw": "1722000",
       "highPriceRaw": "1759000",
@@ -966,7 +963,10 @@
       "accumulatedTradingVolumeRaw": "3118825",
       "accumulatedTradingValueRaw": "5348976000000",
       "marketValueFull": "1,231,610,127,390,000",
-      "marketValueFullRaw": "1231610127390000"
+      "marketValueFullRaw": "1231610127390000",
+      "marketSessionType": "afterMarket",
+      "closePriceRaw": "1686000",
+      "compareToPreviousClosePriceRaw": "-37000"
     }
   ]
 }
