@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T03:59:36.081122+09:00",
+  "updatedAt": "2026-10-18T06:21:49.579587+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -781,10 +781,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic"
+        "stockType": "domestic",
+        "name": "KOSPI"
       },
       "closePrice": "217,000",
       "compareToPreviousClosePrice": "7,000",
@@ -857,8 +857,6 @@
         "name": "KRW"
       },
       "marketSessionType": "afterMarket",
-      "closePriceRaw": "217000",
-      "compareToPreviousClosePriceRaw": "7000",
       "fluctuationsRatioRaw": "3.33",
       "openPriceRaw": "215000",
       "highPriceRaw": "222500",
@@ -866,7 +864,9 @@
       "accumulatedTradingVolumeRaw": "18332314",
       "accumulatedTradingValueRaw": "3963469000000",
       "marketValueFull": "1,268,642,457,936,000",
-      "marketValueFullRaw": "1268642457936000"
+      "marketValueFullRaw": "1268642457936000",
+      "closePriceRaw": "217000",
+      "compareToPreviousClosePriceRaw": "7000"
     },
     {
       "itemCode": "000660",
@@ -881,10 +881,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic"
+        "stockType": "domestic",
+        "name": "KOSPI"
       },
       "closePrice": "1,265,000",
       "compareToPreviousClosePrice": "3,000",
@@ -957,8 +957,6 @@
         "name": "KRW"
       },
       "marketSessionType": "afterMarket",
-      "closePriceRaw": "1265000",
-      "compareToPreviousClosePriceRaw": "3000",
       "fluctuationsRatioRaw": "0.24",
       "openPriceRaw": "1290000",
       "highPriceRaw": "1325000",
@@ -966,7 +964,9 @@
       "accumulatedTradingVolumeRaw": "4485465",
       "accumulatedTradingValueRaw": "5769650000000",
       "marketValueFull": "924,072,841,725,000",
-      "marketValueFullRaw": "924072841725000"
+      "marketValueFullRaw": "924072841725000",
+      "closePriceRaw": "1265000",
+      "compareToPreviousClosePriceRaw": "3000"
     }
   ]
 }
