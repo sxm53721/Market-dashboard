@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T06:53:21.360843+09:00",
+  "updatedAt": "2026-10-25T08:57:34.597808+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -14,10 +14,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "name": "KOSPI",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic"
+        "stockType": "domestic",
+        "name": "KOSPI"
       },
       "closePrice": "5,550.30",
       "compareToPreviousClosePrice": "16.53",
@@ -35,14 +35,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-23T20:15:00+09:00",
       "symbolCode": "KOSPI",
-      "accumulatedTradingVolumeRaw": "249517000",
-      "accumulatedTradingValueRaw": "17374311000000",
       "closePriceRaw": "5550.30",
       "compareToPreviousClosePriceRaw": "16.53",
       "fluctuationsRatioRaw": "0.30",
       "openPriceRaw": "5403.17",
       "highPriceRaw": "5550.30",
-      "lowPriceRaw": "5305.98"
+      "lowPriceRaw": "5305.98",
+      "accumulatedTradingVolumeRaw": "249517000",
+      "accumulatedTradingValueRaw": "17374311000000"
     },
     {
       "itemCode": "KOSDAQ",
@@ -57,10 +57,10 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스닥",
         "nameEng": "KOSDAQ",
-        "name": "KOSDAQ",
         "nationCode": "KOR",
         "nationName": "대한민국",
-        "stockType": "domestic"
+        "stockType": "domestic",
+        "name": "KOSDAQ"
       },
       "closePrice": "751.69",
       "compareToPreviousClosePrice": "-12.41",
@@ -78,14 +78,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-23T20:15:00+09:00",
       "symbolCode": "KOSDAQ",
-      "accumulatedTradingVolumeRaw": "505474000",
-      "accumulatedTradingValueRaw": "5807985000000",
       "closePriceRaw": "751.69",
       "compareToPreviousClosePriceRaw": "-12.41",
       "fluctuationsRatioRaw": "-1.62",
       "openPriceRaw": "748.32",
       "highPriceRaw": "753.02",
-      "lowPriceRaw": "732.87"
+      "lowPriceRaw": "732.87",
+      "accumulatedTradingVolumeRaw": "505474000",
+      "accumulatedTradingValueRaw": "5807985000000"
     }
   ],
   "worldIndex": [
@@ -102,9 +102,9 @@
         "closePriceSendTime": "2031",
         "nameKor": "뉴욕 거래소",
         "nameEng": "New York Stock Exchange",
-        "stockType": "worldstock",
-        "nationName": "미국",
         "nationCode": "USA",
+        "nationName": "미국",
+        "stockType": "worldstock",
         "name": "NYSE"
       },
       "closePrice": "52,215.16",
@@ -123,14 +123,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-23T16:42:55-04:00",
       "symbolCode": "DJI",
-      "highPriceRaw": "52696.70",
-      "lowPriceRaw": "52055.10",
-      "accumulatedTradingVolumeRaw": "348502000",
-      "accumulatedTradingValueRaw": "",
       "closePriceRaw": "52215.16",
       "compareToPreviousClosePriceRaw": "-652.82",
       "fluctuationsRatioRaw": "-1.23",
-      "openPriceRaw": "52696.70"
+      "openPriceRaw": "52696.70",
+      "highPriceRaw": "52696.70",
+      "lowPriceRaw": "52055.10",
+      "accumulatedTradingVolumeRaw": "348502000",
+      "accumulatedTradingValueRaw": ""
     },
     {
       "reutersCode": ".IXIC",
@@ -145,9 +145,9 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
-        "stockType": "worldstock",
-        "nationName": "미국",
         "nationCode": "USA",
+        "nationName": "미국",
+        "stockType": "worldstock",
         "name": "NASDAQ"
       },
       "closePrice": "25,955.34",
@@ -166,14 +166,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-23T17:15:59-04:00",
       "symbolCode": "IXIC",
-      "highPriceRaw": "26111.62",
-      "lowPriceRaw": "25866.15",
-      "accumulatedTradingVolumeRaw": "1225633000",
-      "accumulatedTradingValueRaw": "",
       "closePriceRaw": "25955.34",
       "compareToPreviousClosePriceRaw": "-53.52",
       "fluctuationsRatioRaw": "-0.21",
-      "openPriceRaw": "25893.95"
+      "openPriceRaw": "25893.95",
+      "highPriceRaw": "26111.62",
+      "lowPriceRaw": "25866.15",
+      "accumulatedTradingVolumeRaw": "1225633000",
+      "accumulatedTradingValueRaw": ""
     },
     {
       "reutersCode": ".INX",
@@ -188,9 +188,9 @@
         "closePriceSendTime": "2031",
         "nameKor": "뉴욕 거래소",
         "nameEng": "New York Stock Exchange",
-        "stockType": "worldstock",
-        "nationName": "미국",
         "nationCode": "USA",
+        "nationName": "미국",
+        "stockType": "worldstock",
         "name": "NYSE"
       },
       "closePrice": "7,623.68",
@@ -209,14 +209,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-10-23T16:38:21-04:00",
       "symbolCode": "SPX",
-      "highPriceRaw": "7660.15",
-      "lowPriceRaw": "7612.07",
-      "accumulatedTradingVolumeRaw": "2749563000",
-      "accumulatedTradingValueRaw": "",
       "closePriceRaw": "7623.68",
       "compareToPreviousClosePriceRaw": "-39.75",
       "fluctuationsRatioRaw": "-0.52",
-      "openPriceRaw": "7637.18"
+      "openPriceRaw": "7637.18",
+      "highPriceRaw": "7660.15",
+      "lowPriceRaw": "7612.07",
+      "accumulatedTradingVolumeRaw": "2749563000",
+      "accumulatedTradingValueRaw": ""
     }
   ],
   "usStocks": [
