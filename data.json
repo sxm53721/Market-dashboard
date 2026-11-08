@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T01:14:55.405086+09:00",
+  "updatedAt": "2026-11-09T05:31:00.053645+09:00",
   "domesticIndex": [
     {
       "itemCode": "KOSPI",
@@ -14,8 +14,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "nationName": "대한민국",
         "nationCode": "KOR",
+        "nationName": "대한민국",
         "stockType": "domestic",
         "name": "KOSPI"
       },
@@ -35,14 +35,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-11-06T20:15:00+09:00",
       "symbolCode": "KOSPI",
-      "closePriceRaw": "5059.69",
+      "accumulatedTradingValueRaw": "28982905000000",
+      "accumulatedTradingVolumeRaw": "323267000",
       "lowPriceRaw": "4911.28",
       "highPriceRaw": "5269.10",
-      "accumulatedTradingVolumeRaw": "323267000",
-      "accumulatedTradingValueRaw": "28982905000000",
       "openPriceRaw": "5263.26",
       "fluctuationsRatioRaw": "-6.02",
-      "compareToPreviousClosePriceRaw": "-324.11"
+      "compareToPreviousClosePriceRaw": "-324.11",
+      "closePriceRaw": "5059.69"
     },
     {
       "itemCode": "KOSDAQ",
@@ -57,8 +57,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스닥",
         "nameEng": "KOSDAQ",
-        "nationName": "대한민국",
         "nationCode": "KOR",
+        "nationName": "대한민국",
         "stockType": "domestic",
         "name": "KOSDAQ"
       },
@@ -78,14 +78,14 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-11-06T20:15:00+09:00",
       "symbolCode": "KOSDAQ",
-      "closePriceRaw": "644.27",
+      "accumulatedTradingValueRaw": "5070132000000",
+      "accumulatedTradingVolumeRaw": "443709000",
       "lowPriceRaw": "629.17",
       "highPriceRaw": "657.95",
-      "accumulatedTradingVolumeRaw": "443709000",
-      "accumulatedTradingValueRaw": "5070132000000",
       "openPriceRaw": "654.43",
       "fluctuationsRatioRaw": "-5.03",
-      "compareToPreviousClosePriceRaw": "-34.14"
+      "compareToPreviousClosePriceRaw": "-34.14",
+      "closePriceRaw": "644.27"
     }
   ],
   "worldIndex": [
@@ -102,10 +102,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "뉴욕 거래소",
         "nameEng": "New York Stock Exchange",
+        "name": "NYSE",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NYSE"
+        "stockType": "worldstock"
       },
       "closePrice": "51,285.73",
       "compareToPreviousClosePrice": "-237.33",
@@ -123,12 +123,12 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-11-06T16:37:13-05:00",
       "symbolCode": "DJI",
-      "compareToPreviousClosePriceRaw": "-237.33",
       "closePriceRaw": "51285.73",
-      "lowPriceRaw": "50992.61",
-      "highPriceRaw": "51662.26",
-      "openPriceRaw": "51078.85",
+      "compareToPreviousClosePriceRaw": "-237.33",
       "fluctuationsRatioRaw": "-0.46",
+      "openPriceRaw": "51078.85",
+      "highPriceRaw": "51662.26",
+      "lowPriceRaw": "50992.61",
       "accumulatedTradingVolumeRaw": "523301000",
       "accumulatedTradingValueRaw": ""
     },
@@ -145,10 +145,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "나스닥 증권거래소",
         "nameEng": "NASDAQ Stock Exchange",
+        "name": "NASDAQ",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NASDAQ"
+        "stockType": "worldstock"
       },
       "closePrice": "24,579.43",
       "compareToPreviousClosePrice": "264.43",
@@ -166,12 +166,12 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-11-06T17:15:59-05:00",
       "symbolCode": "IXIC",
-      "compareToPreviousClosePriceRaw": "264.43",
       "closePriceRaw": "24579.43",
-      "lowPriceRaw": "24507.63",
-      "highPriceRaw": "24825.55",
-      "openPriceRaw": "24602.48",
+      "compareToPreviousClosePriceRaw": "264.43",
       "fluctuationsRatioRaw": "1.09",
+      "openPriceRaw": "24602.48",
+      "highPriceRaw": "24825.55",
+      "lowPriceRaw": "24507.63",
       "accumulatedTradingVolumeRaw": "1812172000",
       "accumulatedTradingValueRaw": ""
     },
@@ -188,10 +188,10 @@
         "closePriceSendTime": "2031",
         "nameKor": "뉴욕 거래소",
         "nameEng": "New York Stock Exchange",
+        "name": "NYSE",
         "nationCode": "USA",
         "nationName": "미국",
-        "stockType": "worldstock",
-        "name": "NYSE"
+        "stockType": "worldstock"
       },
       "closePrice": "7,376.86",
       "compareToPreviousClosePrice": "23.13",
@@ -209,12 +209,12 @@
       "marketStatus": "CLOSE",
       "localTradedAt": "2026-11-06T16:37:09-05:00",
       "symbolCode": "SPX",
-      "compareToPreviousClosePriceRaw": "23.13",
       "closePriceRaw": "7376.86",
-      "lowPriceRaw": "7369.55",
-      "highPriceRaw": "7444.20",
-      "openPriceRaw": "7377.65",
+      "compareToPreviousClosePriceRaw": "23.13",
       "fluctuationsRatioRaw": "0.31",
+      "openPriceRaw": "7377.65",
+      "highPriceRaw": "7444.20",
+      "lowPriceRaw": "7369.55",
       "accumulatedTradingVolumeRaw": "3410452000",
       "accumulatedTradingValueRaw": ""
     }
@@ -781,8 +781,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "nationName": "대한민국",
         "nationCode": "KOR",
+        "nationName": "대한민국",
         "stockType": "domestic",
         "name": "KOSPI"
       },
@@ -856,6 +856,9 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
+      "marketSessionType": "afterMarket",
+      "closePriceRaw": "193500",
+      "compareToPreviousClosePriceRaw": "-8000",
       "fluctuationsRatioRaw": "-3.97",
       "openPriceRaw": "180000",
       "highPriceRaw": "196500",
@@ -863,10 +866,7 @@
       "accumulatedTradingVolumeRaw": "35068743",
       "accumulatedTradingValueRaw": "6622318000000",
       "marketValueFull": "1,131,254,910,648,000",
-      "marketValueFullRaw": "1131254910648000",
-      "marketSessionType": "afterMarket",
-      "closePriceRaw": "193500",
-      "compareToPreviousClosePriceRaw": "-8000"
+      "marketValueFullRaw": "1131254910648000"
     },
     {
       "itemCode": "000660",
@@ -881,8 +881,8 @@
         "closePriceSendTime": "1630",
         "nameKor": "코스피",
         "nameEng": "KOSPI",
-        "nationName": "대한민국",
         "nationCode": "KOR",
+        "nationName": "대한민국",
         "stockType": "domestic",
         "name": "KOSPI"
       },
@@ -956,6 +956,9 @@
         "text": "Republic of Korea won",
         "name": "KRW"
       },
+      "marketSessionType": "afterMarket",
+      "closePriceRaw": "1176000",
+      "compareToPreviousClosePriceRaw": "-88000",
       "fluctuationsRatioRaw": "-6.96",
       "openPriceRaw": "1089000",
       "highPriceRaw": "1217000",
@@ -963,10 +966,7 @@
       "accumulatedTradingVolumeRaw": "7789034",
       "accumulatedTradingValueRaw": "8961260000000",
       "marketValueFull": "859,059,021,240,000",
-      "marketValueFullRaw": "859059021240000",
-      "marketSessionType": "afterMarket",
-      "closePriceRaw": "1176000",
-      "compareToPreviousClosePriceRaw": "-88000"
+      "marketValueFullRaw": "859059021240000"
     }
   ]
 }
